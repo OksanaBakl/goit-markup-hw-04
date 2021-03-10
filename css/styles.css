@@ -63,11 +63,6 @@ img {
   color: var(--accent-color);
 }
 
-/* .logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-} */
-
 .list {
   list-style: none;
   text-decoration: none;
@@ -392,13 +387,6 @@ margin-bottom: 30px;
   margin-left: 32px;
 }
 
-/* .social-item-team:hover,
-.social-item-team:focus {
-   background-color: var(--accent-color);
-   
-   cursor: pointer; 
-} */
-
 
 .social-item-team .box-icon {
  fill:#AFB1B8;
@@ -431,13 +419,12 @@ margin-bottom: 30px;
       /* outline: 1px solid tomato; */
     display: flex;
     margin-left: -30px;
-
 }
    
 .clients-item {
   /* outline: 1px solid teal; */
-
-    margin-left: 30px;}
+    margin-left: 30px;
+  }
 
 
 .clients-link {
@@ -447,25 +434,26 @@ margin-bottom: 30px;
     border-radius: 4px;
     width: 170px;
     height: 90px;
-    fill: #AFB1B8;
-    padding: 20px 62px;
-    display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+}
+
+.box-client {
+   fill:  #AFB1B8;
 }
 .clients-link:hover,
  .clients-link:focus{
 border: 1px solid var(--accent-color);
  cursor: pointer;
 }
+.clients-link:hover .box-client,
+ .clients-link:focus .box-client {
 
-.clients-link:hover .box-client, 
- .clients-link:focus .box-client{
-fill: var(--accent-color)
+fill: var(--accent-color);
+cursor: pointer;
 }
-.box-client {
-   fill: currentColor;
-}
-
-
 
 /*========Footer========*/
 .footer {
